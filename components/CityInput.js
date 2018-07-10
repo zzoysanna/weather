@@ -26,7 +26,7 @@ class CityInput extends Component {
   	let value = event.target.value;
   	this.setState({value: value});
   	if (value.length >= 3 && value.match(/^\S\W/)) {
-  		const URL = "http:/\/kladr-api.ru/api.php?query=" + value + "&contentType=city&withParent=0&limit=10&typeCode=1";
+  		const URL = "http://kladr-api.ru/api.php?query=" + value + "&contentType=city&withParent=0&limit=10&typeCode=1";
 	    fetch(URL)
 	      .then(res => res.json())
 	      .then(json => {

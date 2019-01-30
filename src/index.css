@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App-content {
+  padding: 20px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 16px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 60px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.city {
+  background-repeat: no-repeat;
+  background-position: 10px 28px;
+  width: 200px;
+  height: 120px;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+.city-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.city-temperature {
+  font-size: 24px;
+  padding: 10px 0 10px 60px;
+}
+.city-content {
+  margin-top: 10px;
+}
+.city-close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  padding: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.city-input {
+  margin-bottom: 20px;
+  position: relative;
+}
+.city-input input{
+  font-size: 20px;
+  border: 1px solid #ccc;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  outline: none;
+  width: 256px;
+}
+.city-input button {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+.city-input ul {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  width: 320px;
+}
+.city-input li {
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.city-input li:hover {
+  background: #f0f0f0;
+}
+
+.city-filter input {
+  width: 275px;
+  margin: 10px 0 20px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.city-filter span {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.city-warning {
+  display: inline-block;
+  width: 300px;
+  margin-left: 20px;
+  background: rgba(252, 164, 148,0.5);
+  padding: 0 15px;
+  box-sizing: border-box;
+  height: 42px;
+  line-height: 42PX;
+  border-radius: 5px;
+  color: #ab0b0b;
+}
+.city-list_title {
+  margin-bottom: 20px;
+}
+.city-list_update {
+  color: #a3a3a3;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+.city-list_btn{
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  color: #a3a3a3;
+  font-size: 0.8em;
+}
